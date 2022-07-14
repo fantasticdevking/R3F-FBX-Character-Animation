@@ -18,7 +18,7 @@ function App() {
   const fov = 60;
   const aspect = 1920 / 1080;
   const near = 1.0;
-  const far = 1000.0;
+  const far = 500.0;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(25, 10, 25);
 
@@ -27,8 +27,8 @@ function App() {
   light.target.position.set(0, 0, 0);
   light.castShadow = true;
   light.shadow.bias = -0.001;
-  light.shadow.mapSize.width = 4096;
-  light.shadow.mapSize.height = 4096;
+  light.shadow.mapSize.width = 2048;
+  light.shadow.mapSize.height = 2048;
   light.shadow.camera.near = 0.1;
   light.shadow.camera.far = 500.0;
   light.shadow.camera.left = 100;
