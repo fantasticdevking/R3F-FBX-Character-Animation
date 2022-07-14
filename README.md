@@ -72,8 +72,8 @@ E: Dance
 - Simplex Noise Floor
 - 3D Character
 - Animations: Idle, Walk, Run, Dance
-- Movement with w, a, s, d, shift
-- Dance with e
+- Movement with W, A, S, D, Shift
+- Dance with E
 - Third Person Camera
 
 <!-- GETTING STARTED -->
