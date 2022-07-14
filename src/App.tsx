@@ -6,6 +6,7 @@ import { Canvas } from "@react-three/fiber";
 import { Loader, OrbitControls } from "@react-three/drei";
 
 import Ground from "./components/Ground";
+import Nature from "./components/Nature";
 
 function App() {
   const hemiLight = new THREE.HemisphereLight(0xffffff, 0xfffffff, 0.6);
@@ -39,8 +40,8 @@ function App() {
     <div className="w-full h-screen bg-fuchsia-100">
 
         <Canvas shadows >
-          <color attach="background" args={['#444488']}/>
-          <fog attach="fog" color="#444488" near={50} far={300} />
+          <color attach="background" args={['#555555']}/>
+          <fog attach="fog" color="#555555" near={50} far={300} />
 
           <hemisphereLight {...hemiLight} />/
           <directionalLight {...light} />
@@ -50,6 +51,7 @@ function App() {
 
           <Suspense fallback={null}>
             <Ground />
+            <Nature />
             <perspectiveCamera {...camera} />
           </Suspense>
         </Canvas>
